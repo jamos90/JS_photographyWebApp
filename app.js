@@ -26,5 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     shoppingCart.appendChild(newItem);
 
     form.reset();
-  })
+  });
+
+   const deleteAll = document.querySelector('#delete-button');
+     deleteAll.addEventListener("click", () => {
+     const list = document.querySelector('#shopping-cart');
+     list.textContent = " ";
+     form.reset();
+
+    });
   });
