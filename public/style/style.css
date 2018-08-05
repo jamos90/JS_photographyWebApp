@@ -1,15 +1,26 @@
 h1 {
   text-align: center;
   border: 0.1em black solid;
-  background-color: hsla(207, 51%, 83%,0.7)
+  background-color: hsla(207, 51%, 83%,0.5);
+  color: 	hsla(156, 86%, 28%,0.5);
 }
-
 
 nav {
   position: absolute;
   left: 550px;
   display: block;
+}
 
+nav a {
+  padding: 1em;
+  color: hsla(156, 86%, 28%,0.6);
+  text-decoration: none;
+  text-shadow: 1;
+}
+
+a:active {
+  position: relative;
+  top: 0.1em;
 }
 
 .slideshow{
@@ -73,5 +84,5 @@ display: inline;
 }
 
 body {
-  background-color: hsla(204, 28%, 66%, 0.5);
+  background-color: hsla(204, 28%, 66%, 0.4);
 }
