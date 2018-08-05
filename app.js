@@ -5,11 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const shoppingCart = document.createElement('ul');
 
-  const newItem = document.createElement('li');
-
   const shoppingCartDiv = document.querySelector('#shopping-cart');
 
-  shoppingCartDiv.appendChild(shoppingCart);
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -20,8 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const size = event.target.size.value;
 
+    const newItem = document.createElement('li');
+
     newItem.textContent = `${pictureTitle}, ${ammount}, ${size}`;
 
+    const list = document.querySelector('#shopping-cart');
+    list.appendChild(shoppingCart);
     shoppingCart.appendChild(newItem);
 
     form.reset();
