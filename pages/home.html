@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jamos Photography</title>
+
+    <link href ="../public/style/style.css" type="text/css" rel="stylesheet" media="screen">
+
+    <script scr ="../slideshow.js">
+    </script>
+
+  </head>
+
+  <body>
+    <h1> Jamos Photography </h1>
+    <nav>
+    <div class ="dropdown">
+    <button class="dropbtn">Home
+    <i class ="home_button"></i></button>
+    <div class="dropdown-content">
+    <a href ="/all" class="button center"> Home </a>
+    </div>
+</div>
+    <div class = "dropdown">
+        <button class="dropbtn">Teams</button>
+        <div class ="dropdown-content">
+            <a href="./pages/landscapes.html">landscapes</a>
+        </div>
+        <div class = "dropdown-content">
+          <a href ="/pages/nightscapes"> Nightscapes </a>
+        </div>
+    </div>
+</nav>
+
+  <img src = "../public/slideshowimages/1.jpg" width= "200px" height="200px" id ="image">
+  <br>
+  <input type="button" value ="start slide show" onclick="changeImage()"/>
+  <input type ="button" value = "stop slide show"/>
+
+
+  <script type = "text/javascript">
+  function changeImage() {
+    let imageScoure = document.getElementById("image").getAttribute("src");
+    let currentImageNumber = imageScoure.substring(imageScoure.lastIndexOf("/") +1 ,imageScoure.lastIndexOf("/") +2);
+    //number function changes currentImageNumber to a number and then adds one to it.
+
+    //takes the current image source and changes it to the current image number, one at the start, to it's value plus 1.
+    document.getElementById("image").setAttribute("src", "../public/slideshowimages/" + (Number(currentImageNumber) +1) + ".jpg");
+  };
+  </script>
+
+
+  </body>
+</html>
