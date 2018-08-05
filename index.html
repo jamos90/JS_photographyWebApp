@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reading List App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="./app.js">
+    </script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <br>
+        <div class="form-item">
+          <label for="title" class="primary">Picture Title</label>
+          <input type="text" id="title" required/>
+        </div>
+        <br>
+        <div class="form-item">
+          <label for="amount" class="primary">Amount</label>
+          <input type="number" id="amount" required/>
+        </div>
+        <br>
+        <div class="form-item">
+          <label for="size" class="primary">Size</label>
+          <select id="size">
+            <option value="" disabled selected></option>
+            <option value="Book">30x30</option>
+            <option value="Article">8x8</option>
+            <option value="Blog Post">4x4</option>
+          </select>
+        </div>
+        <br>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>Reading List</h1>
+    <div id="shopping-cart">
+      <!-- reading list -->
+    </div>
+
+    <button id="button" type="button">Clear Reading List</button>
+
+  </body>
+</html>
