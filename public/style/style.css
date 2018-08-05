@@ -3,12 +3,14 @@ h1 {
   border: 0.1em black solid;
   background-color: hsla(207, 51%, 83%,0.5);
   color: 	hsla(156, 86%, 28%,0.5);
+  font-family: 'Abel', sans-serif;
 }
 
 nav {
-  position: absolute;
-  left: 550px;
-  display: block;
+  position: relative;
+  left: 450px;
+
+
 }
 
 nav a {
@@ -85,4 +87,9 @@ display: inline;
 
 body {
   background-color: hsla(204, 28%, 66%, 0.4);
+}
+
+img {
+  padding: 0.1em;
+  border: 0.1em black solid;
 }
