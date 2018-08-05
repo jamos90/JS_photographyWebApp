@@ -17,9 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const size = event.target.size.value;
 
+    const delivery = event.target.delivery.value
+
     const newItem = document.createElement('li');
 
-    newItem.textContent = `${pictureTitle}, ${ammount}, ${size}`;
+    newItem.textContent = `${pictureTitle}, ${ammount}, ${size}, ${delivery}`;
 
     const list = document.querySelector('#shopping-cart');
     list.appendChild(shoppingCart);

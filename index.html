@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Reading List App</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="./stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="./app.js">
     </script>
   </head>
@@ -30,14 +30,28 @@
             <option value="Blog Post">4x4</option>
           </select>
         </div>
+          <div class ="form-item">
+            <p> Please select your prefered delivery method</p>
+            <input type = "radio" id = "delvery1" name = "delivery" value = "Instore">
+            <label for="delvery1" > Collect in Store </label>
+
+            <input type = "radio" id = "delivery2" name = "delivery" value = "Home-delivery">
+            <label for = "delivery2" > Home delivery </label>
+
+            <input type = "radio" id = "delivery3" name = "delivery" value = "Digital-only">
+            <label for = "delivery3"> Digital Copy only </label>
+
+          </div>
+
         <br>
       </div>
+
       <input type="submit" value="save"/>
     </form>
 
     <h1>Your Cart</h1>
     <div id="shopping-cart">
-      <!-- reading list -->
+
     </div>
 
     <button id="delete-button" type="button">Clear Your Cart</button>
