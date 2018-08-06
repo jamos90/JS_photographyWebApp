@@ -1,8 +1,12 @@
-document.addEventListener("DOMContentLoaded", () =>{
-   let content = document.getElementById("image");
-    content.onmouseover = function () {
-      let mouseOver = document.
+  window.onload  = () => {
 
+  const content = document.getElementById('image-holder');
+
+    content.onmouseover = function () {
+      document.getElementById('image-div').style.display ='block';
     }
-    onMouse.textContent = "Click to add this image to your basket";
-});
+    content.onmouseout = function () {
+      document.getElementById('image-div').style.display ='none';
+    }
+
+  };

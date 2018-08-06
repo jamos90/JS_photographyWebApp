@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   startSlideShow();
+  const buttonClick = document.getElementById("stop");
+  buttonClick.addEventListener("click", () =>{
+    stopSlideShow();
+  });
+
 
   var intervalId;
-
    function startSlideShow() {
      intervalId = setInterval(changeImage, 2500);
    }
-
    //will clear interval id ie stop the slideshow
    function stopSlideShow() {
      clearInterval(intervalId);

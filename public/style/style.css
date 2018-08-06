@@ -1,10 +1,11 @@
 
 h1 {
   text-align: center;
-  border: 0.1em black solid;
-  background-color: hsla(207, 51%, 83%,0.5);
+  border: 0.01em black solid;
+  background-color: hsla(207, 60%, 83%,0.6);
   color: 	hsla(156, 86%, 28%,0.5);
   font-family: 'Abel', sans-serif;
+  padding: 0.2em;
 }
 
 nav {
@@ -95,4 +96,13 @@ img {
   padding: 0.1em;
   border: 0.1em black solid;
   display: inline-block;
+}
+
+#image-holder{
+  width: 410px;
+  padding-left: 0.25em;
+}
+
+#images{
+  display: inline-flex;
 }
